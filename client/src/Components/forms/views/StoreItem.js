@@ -37,7 +37,7 @@ class StoreItem extends Component {
 
 
     componentDidMount() {
-        axios.get(`http://10.48.7.34:5000/store/${this.props.match.params.id}`)
+        axios.get(`/store/${this.props.match.params.id}`)
             .then(response => {
                 this.setState(
                     {

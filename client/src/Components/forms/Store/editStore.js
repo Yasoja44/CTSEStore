@@ -57,7 +57,7 @@ class EditStore extends Component {
         //
         // console.log(this.state.paper_id);
 
-        axios.get(`http://10.48.7.34/store/${this.props.match.params.id}`)
+        axios.get(`/store/${this.props.match.params.id}`)
             .then(response => {
                 this.setState(
                     {
@@ -95,7 +95,7 @@ class EditStore extends Component {
         }
 
         console.log('DATA TO SEND', store);
-        axios.put(`http://10.48.7.34/store/${this.props.match.params.id}`, store)
+        axios.put(`/store/${this.props.match.params.id}`, store)
             .then(response => {
                 SubmissionAlert()
 

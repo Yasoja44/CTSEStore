@@ -142,7 +142,7 @@ class CreateStore extends Component {
         }
         else {
             console.log('DATA TO SEND', store);
-            axios.post('http://10.48.7.34:5000/store', store)
+            axios.post('/store', store)
                 .then(response => {
                     SubmissionAlert()
 
