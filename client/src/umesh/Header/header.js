@@ -45,7 +45,7 @@ class Header extends Component {
             user: ''
         })
 
-        window.location.replace('/login')
+        window.location.replace('http://35.226.239.6:3000/login')
     }
     profileLink = e => {
         window.location.assign('http://35.226.239.6:3000/profile');
