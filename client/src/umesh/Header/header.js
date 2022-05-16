@@ -45,7 +45,7 @@ class Header extends Component {
             user: ''
         })
 
-        window.location.replace('http://35.226.239.6:3000/login')
+        window.location.assign('http://35.226.239.6:3000/login')
     }
     profileLink = e => {
         window.location.assign('http://35.226.239.6:3000/profile');
@@ -343,11 +343,11 @@ class Header extends Component {
                     localStorage.getItem('userPosition') !== "user" ||
                     localStorage.getItem('userPosition') === " " ?
                         <Nav className="btn pull-right">
-                            <a href="/login"><Button className="button "
+                            <a href="http://35.226.239.6:3000/login"><Button className="button "
                                                      variant="outline-primary">Login</Button></a>
                             &nbsp;
                             &nbsp;
-                            <a href="/register"><Button className="button"
+                            <a href="http://35.226.239.6:3000/register"><Button className="button"
                                                         variant="outline-primary">Register</Button></a>
                         </Nav>
                         :
