@@ -1,0 +1,15 @@
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "ctse-store-server-service"
+  namespace: "default"
+  labels:
+    app: "ctse-store-server"
+spec:
+  ports:
+  - protocol: "TCP"
+    port: 5000
+  selector:
+    app: "ctse-store-server"
+  type: "ClusterIP"
